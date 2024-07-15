@@ -5,10 +5,8 @@ import Header from "./components/Header"
 
 const Animation = () => {
   return (
-    <div className="fixed inset-0 -z-10 opacity-0 bg-black flex items-center justify-center text-white animate-intro">
-      <h1 className="text-9xl font-bold font-futuraPt animate-introText">
-        3 P M
-      </h1>
+    <div className="fixed inset-0 -z-10 opacity-0 bg-black flex items-center justify-center text-white font-Arial animate-intro">
+      <h1 className="text-9xl font-bold animate-introText">Pacific Palace</h1>
     </div>
   )
 }
