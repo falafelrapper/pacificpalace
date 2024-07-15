@@ -1,33 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Outlet } from "react-router-dom"
+import { useState, useEffect } from "react"
+import "./App.scss"
+
+const Animation = () => {
+  return (
+    <div className="fixed inset-0 -z-10 opacity-0 bg-black flex items-center justify-center text-white animate-intro">
+      <h1 className="text-9xl font-bold font-futuraPt animate-introText">
+        3 P M
+      </h1>
+    </div>
+  )
+}
+
+const checkLastSeen = () => {
+  const lastSeen = localStorage.getItem("animationLastSeen")
+  if (!lastSeen) return false
+
+  const lastSeenDate = new Date(lastSeen)
+  const now = new Date()
+  const diff = now.getTime() - lastSeenDate.getTime()
+  const diffInHours = diff / (1000 * 60 * 60)
+
+  return diffInHours < 24
+}
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showAnimation, setShowAnimation] = useState(false)
+
+  useEffect(() => {
+    if (!checkLastSeen()) {
+      setShowAnimation(true)
+    }
+    localStorage.setItem("animationLastSeen", new Date().toISOString())
+  }, [])
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="antialiased font-proximaNova">
+        {showAnimation && <Animation />}
+        <Outlet />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
