@@ -1,0 +1,51 @@
+:root {
+  --transparent: #00000000;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #949494;
+  border-radius: 10px;
+  width: 5px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scroll-section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}

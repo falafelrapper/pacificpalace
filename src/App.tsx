@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { useState, useEffect } from "react"
 import "./App.scss"
+import Header from "./components/Header"
 
 const Animation = () => {
   return (
@@ -38,6 +39,7 @@ function App() {
     <>
       <div className="antialiased font-proximaNova">
         {showAnimation && <Animation />}
+        <Header />
         <Outlet />
       </div>
     </>
