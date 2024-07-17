@@ -105,9 +105,9 @@ const Home: React.FC = () => {
         <h2 className="z-50 my-10 text-5xl font-arial font-bold text-white">
           VIDEOS
         </h2>
-        <div className="z-50 my-10">
+        <div className="z-50 h-full flex items-center">
           <iframe
-            className="h-[50vh] w-[70vw] my-auto"
+            className="h-[350px] w-[350px] md:h-[600px] md:w-[1000px]"
             src="https://www.youtube.com/embed/GgaqsiYcpBQ?si=AYxVeU7iv-20wZ9P"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

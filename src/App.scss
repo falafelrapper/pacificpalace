@@ -74,7 +74,7 @@ a {
   left: 0;
 }
 .link-hover::before {
-  background-color: #000000;
+  background-color: #ffffff;
   height: 2px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -89,7 +89,7 @@ a {
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #000000;
+  color: #ffffff;
 }
 
 .link-hover:hover::before {
@@ -152,4 +152,9 @@ a {
   .cover-img {
     transform: skewY(100px); /* Smooth transition for the zoom effect */
   }
+}
+
+.youtube {
+  height: 500px;
+  width: 720px;
 }

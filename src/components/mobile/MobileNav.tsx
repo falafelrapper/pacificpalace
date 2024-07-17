@@ -25,7 +25,7 @@ const MobileNav = () => {
       <div className="block lg:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="z-50 flex fixed top-0 right-0 items-center p-3 text-black hover:text-gray-700"
+          className="z-50 flex fixed top-0 right-0 items-center p-5 text-black hover:text-gray-700"
         >
           <div className="relative w-6 h-6">
             <div className="absolute inset-0 flex items-center justify-center">
@@ -40,7 +40,7 @@ const MobileNav = () => {
               >
                 <FontAwesomeIcon
                   icon={faBars}
-                  className="h-6 w-6 text-white ease-in-out duration-100 hover:text-gray-500"
+                  className="h-10 w-10 text-white ease-in-out duration-100 hover:text-gray-500"
                   aria-hidden="true"
                 />
               </Transition>
@@ -57,7 +57,7 @@ const MobileNav = () => {
               >
                 <FontAwesomeIcon
                   icon={faX}
-                  className="h-6 w-6 text-white ease-in-out duration-100 hover:text-gray-500"
+                  className="h-10 w-10 text-white ease-in-out duration-100 hover:text-gray-500"
                   aria-hidden="true"
                 />
               </Transition>
