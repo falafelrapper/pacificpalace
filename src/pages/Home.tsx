@@ -114,7 +114,11 @@ const Home: React.FC = () => {
             title="YouTube Video Player"
           ></iframe>
         </div>
-        <img className="cover-img absolute" src="/img/hero.jpg" alt="Cover" />
+        <img
+          className="cover-img absolute"
+          src="/img/band_purple.jpg"
+          alt="Cover"
+        />
       </div>
     </>
   )
