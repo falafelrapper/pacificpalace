@@ -40,6 +40,7 @@ const Navbar = () => {
                 isSocialHovered ? "opacity-100" : "opacity-0"
               }`}
               href="https://www.instagram.com/pacific.palaceee/"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
@@ -51,6 +52,7 @@ const Navbar = () => {
                 isSocialHovered ? "opacity-100" : "opacity-0"
               }`}
               href="https://www.tiktok.com/@pacificpalaceee"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
@@ -62,6 +64,7 @@ const Navbar = () => {
                 isSocialHovered ? "opacity-100" : "opacity-0"
               }`}
               href="https://www.facebook.com/pacificpalaceee"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
@@ -87,6 +90,7 @@ const Navbar = () => {
                 isListenHovered ? "opacity-100" : "opacity-0"
               }`}
               href="https://music.apple.com/us/artist/pacific-palace/1570737065"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
@@ -98,6 +102,7 @@ const Navbar = () => {
                 isListenHovered ? "opacity-100" : "opacity-0"
               }`}
               href="https://open.spotify.com/artist/5rBKJhlJI8u3OFwglQGjcU?si=1G7RSXJfRtqAR-JUoClCeA&utm_medium=share&utm_source=linktree"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
@@ -109,6 +114,7 @@ const Navbar = () => {
                 isListenHovered ? "opacity-100" : "opacity-0"
               }`}
               href="https://music.youtube.com/channel/UCX93xoLnJ93LvB9Ykm4zCYA"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
