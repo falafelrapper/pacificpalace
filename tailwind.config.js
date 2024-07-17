@@ -33,8 +33,8 @@ export default {
         },
       },
       animation: {
-        fadeIn: "fadeIn .3s",
-        fadeInHeader: "fadeInHeader .6s",
+        fadeIn: "fadeIn .5s",
+        fadeInHeader: "fadeInHeader .7s",
         intro: "intro linear 2s",
         introText: "introText 1s",
       },
