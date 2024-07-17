@@ -4,10 +4,11 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
+  background-color: #000000;
   font-family: Helvetica, sans-serif;
 }
 

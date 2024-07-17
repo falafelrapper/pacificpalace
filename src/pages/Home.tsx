@@ -77,48 +77,50 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <div id="cover" className="cover relative z-40">
-        <img
-          className="header-img absolute"
-          src="/img/james_red.jpg"
-          alt="Cover"
-        />
-      </div>
-      <div
-        id="tour"
-        className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
-      >
-        <h2 className="z-30 my-10 text-5xl font-bold">SHOWS</h2>
-
-        <p className="z-30 text-3xl">No upcoming shows currently</p>
-
-        <img
-          className="cover-img absolute min-w-full select-none"
-          src="/img/james_blue.jpg"
-          alt="Cover"
-        />
-      </div>
-      <div
-        id="videos"
-        className="cover scroll-section relative z-20 flex flex-col items-center"
-      >
-        <h2 className="z-50 my-10 text-5xl font-arial font-bold text-white">
-          VIDEOS
-        </h2>
-        <div className="z-50 h-full flex items-center">
-          <iframe
-            className="h-[300px] w-[400px] md:h-[500px] md:w-[800px] lg:h-[720px] lg:w-[1280px]"
-            src="https://www.youtube.com/embed/GgaqsiYcpBQ?si=AYxVeU7iv-20wZ9P"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            title="YouTube Video Player"
-          ></iframe>
+      <div className="animate-fadeIn">
+        <div id="cover" className="cover relative z-40">
+          <img
+            className="header-img absolute"
+            src="/img/james_red.jpg"
+            alt="Cover"
+          />
         </div>
-        <img
-          className="cover-img video-img absolute"
-          src="/img/band_purple.jpg"
-          alt="Cover"
-        />
+        <div
+          id="tour"
+          className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
+        >
+          <h2 className="z-30 my-10 text-5xl font-bold">SHOWS</h2>
+
+          <p className="z-30 text-3xl">No upcoming shows currently</p>
+
+          <img
+            className="cover-img absolute min-w-full select-none"
+            src="/img/james_blue.jpg"
+            alt="Cover"
+          />
+        </div>
+        <div
+          id="videos"
+          className="cover scroll-section relative z-20 flex flex-col items-center"
+        >
+          <h2 className="z-50 my-10 text-5xl font-arial font-bold text-white">
+            VIDEOS
+          </h2>
+          <div className="z-50 h-full flex items-center">
+            <iframe
+              className="h-[300px] w-[400px] md:h-[500px] md:w-[800px] lg:h-[720px] lg:w-[1280px]"
+              src="https://www.youtube.com/embed/GgaqsiYcpBQ?si=AYxVeU7iv-20wZ9P"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              title="YouTube Video Player"
+            ></iframe>
+          </div>
+          <img
+            className="cover-img video-img absolute"
+            src="/img/band_purple.jpg"
+            alt="Cover"
+          />
+        </div>
       </div>
     </>
   )

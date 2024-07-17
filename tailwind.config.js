@@ -17,6 +17,11 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        fadeInHeader: {
+          "0%": { opacity: "0" },
+          "50%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
         intro: {
           "0%": { opacity: "1", zIndex: "100" },
           "75%": { opacity: "1", zIndex: "100" },
@@ -28,7 +33,8 @@ export default {
         },
       },
       animation: {
-        fadeIn: "fadeIn .5s",
+        fadeIn: "fadeIn .3s",
+        fadeInHeader: "fadeInHeader .6s",
         intro: "intro linear 2s",
         introText: "introText 1s",
       },
