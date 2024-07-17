@@ -5,7 +5,7 @@ import Header from "./components/Header"
 
 const Animation = () => {
   return (
-    <div className="fixed inset-0 -z-10 opacity-0 bg-black flex items-center justify-center text-white font-Arial animate-intro">
+    <div className="fixed inset-0 -z-10 opacity-0 bg-black flex items-center justify-center text-white font-arial animate-intro">
       <h1 className="text-9xl font-bold animate-introText">Pacific Palace</h1>
     </div>
   )

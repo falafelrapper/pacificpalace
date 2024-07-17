@@ -53,7 +53,7 @@ const Home: React.FC = () => {
 
     if (isTourVisible) {
       const scrollPosition = window.scrollY
-      const zoomFactor = 1 + scrollPosition / 8000 // Adjust this factor as needed
+      const zoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
       tourImageElement.style.transform = `scale(${zoomFactor})`
     } else {
       tourImageElement.style.transform = "scale(1)"
@@ -61,10 +61,10 @@ const Home: React.FC = () => {
 
     if (isVideosVisible) {
       const scrollPosition = window.scrollY
-      const zoomFactor = 1 + scrollPosition / 8000 // Adjust this factor as needed
+      const zoomFactor = 1.5 - scrollPosition / 10000 // Adjust this factor as needed
       videosImageElement.style.transform = `scale(${zoomFactor})`
     } else {
-      videosImageElement.style.transform = "scale(1)"
+      videosImageElement.style.transform = "scale(1.5)"
     }
   }
 
@@ -78,18 +78,22 @@ const Home: React.FC = () => {
   return (
     <>
       <div id="cover" className="cover relative z-40">
-        <img className="cover-img absolute" src="/img/cover.jpg" alt="Cover" />
+        <img
+          className="header-img absolute"
+          src="/img/James_red.png"
+          alt="Cover"
+        />
       </div>
       <div
         id="tour"
-        className="cover scroll-section z-30 flex flex-col items-center text-white font-arial"
+        className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
       >
-        <h2 className="z-50 my-10 text-5xl font-bold">TOUR</h2>
+        <h2 className="z-30 my-10 text-5xl font-bold">TOUR</h2>
 
         <p className="z-30 text-3xl">No upcoming shows currently</p>
 
         <img
-          className="cover-img absolute min-w-full"
+          className="cover-img absolute min-w-full select-none"
           src="/img/james_blue.png"
           alt="Cover"
         />
@@ -103,8 +107,7 @@ const Home: React.FC = () => {
         </h2>
         <div className="z-50 my-10">
           <iframe
-            width="1280"
-            height="720"
+            className="h-[50vh] w-[70vw] my-auto"
             src="https://www.youtube.com/embed/GgaqsiYcpBQ?si=AYxVeU7iv-20wZ9P"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
