@@ -73,6 +73,7 @@ a {
   width: 100%;
   left: 0;
 }
+
 .link-hover::before {
   background-color: #ffffff;
   height: 2px;
@@ -143,18 +144,8 @@ a {
   max-height: 175px;
 }
 
-.category-nav-mobile {
-  transition: ease-in 0.2s;
-  max-height: 20px;
-}
-
-@media (min-width: 720px) {
-  .cover-img {
-    transform: skewY(100px); /* Smooth transition for the zoom effect */
+@media (max-width: 768px) {
+  .video-img {
+    object-position: 80% center;
   }
-}
-
-.youtube {
-  height: 500px;
-  width: 720px;
 }

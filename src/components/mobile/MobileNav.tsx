@@ -84,14 +84,14 @@ const MobileNav = () => {
                 href="#tour"
                 onClick={handleClose}
               >
-                Tours
+                SHOWS
               </a>
               <a
                 className="ease-in-out duration-100 my-2 border-b-transparent border-b-2 text-white hover:text-gray-500"
                 href="#videos"
                 onClick={handleClose}
               >
-                Videos
+                VIDEOS
               </a>
               <div className="relative">
                 <div className="ease-in-out duration-100 my-2 border-b-2 border-b-transparent text-white role-nav hover:text-gray-500">
@@ -99,7 +99,7 @@ const MobileNav = () => {
                     className="cursor-pointer "
                     onClick={() => setActiveId(1)}
                   >
-                    Socials
+                    SOCIALS
                   </span>
                 </div>
 
@@ -144,7 +144,7 @@ const MobileNav = () => {
                     className="cursor-pointer "
                     onClick={() => setActiveId(2)}
                   >
-                    Listen
+                    LISTEN
                   </span>
                 </div>
 

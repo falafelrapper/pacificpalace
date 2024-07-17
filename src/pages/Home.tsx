@@ -80,7 +80,7 @@ const Home: React.FC = () => {
       <div id="cover" className="cover relative z-40">
         <img
           className="header-img absolute"
-          src="/img/James_red.png"
+          src="/img/james_red.jpg"
           alt="Cover"
         />
       </div>
@@ -88,13 +88,13 @@ const Home: React.FC = () => {
         id="tour"
         className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
       >
-        <h2 className="z-30 my-10 text-5xl font-bold">TOUR</h2>
+        <h2 className="z-30 my-10 text-5xl font-bold">SHOWS</h2>
 
         <p className="z-30 text-3xl">No upcoming shows currently</p>
 
         <img
           className="cover-img absolute min-w-full select-none"
-          src="/img/james_blue.png"
+          src="/img/james_blue.jpg"
           alt="Cover"
         />
       </div>
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
         </h2>
         <div className="z-50 h-full flex items-center">
           <iframe
-            className="h-[350px] w-[350px] md:h-[600px] md:w-[1000px]"
+            className="h-[300px] w-[400px] md:h-[500px] md:w-[800px] lg:h-[720px] lg:w-[1280px]"
             src="https://www.youtube.com/embed/GgaqsiYcpBQ?si=AYxVeU7iv-20wZ9P"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
           ></iframe>
         </div>
         <img
-          className="cover-img absolute"
+          className="cover-img video-img absolute"
           src="/img/band_purple.jpg"
           alt="Cover"
         />

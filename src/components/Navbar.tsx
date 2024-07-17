@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
       <div className="hidden lg:flex text-white">
         <a href="#tour" className="mx-3 link-hover">
-          Tour
+          Shows
         </a>
         <a className="mx-3 link-hover" href="#videos">
           Videos
