@@ -10,6 +10,7 @@ import {
   faTiktok,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
+import { Link } from "react-router-dom"
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -79,20 +80,27 @@ const MobileNav = () => {
         <div className="text-center mx-auto">
           <div className="text-4xl flex w-screen h-screen items-center justify-center flex-col">
             <div className="flex w-screen items-center justify-center flex-col">
-              <a
+              <Link
+                to="/bio"
                 className="ease-in-out duration-100 my-2 border-b-transparent border-b-2 text-white hover:text-gray-500"
-                href="#tour"
+                onClick={handleClose}
+              >
+                BIO
+              </Link>
+              <Link
+                className="ease-in-out duration-100 my-2 border-b-transparent border-b-2 text-white hover:text-gray-500"
+                to="/#tour"
                 onClick={handleClose}
               >
                 SHOWS
-              </a>
-              <a
+              </Link>
+              <Link
                 className="ease-in-out duration-100 my-2 border-b-transparent border-b-2 text-white hover:text-gray-500"
-                href="#videos"
+                to="/#videos"
                 onClick={handleClose}
               >
                 VIDEOS
-              </a>
+              </Link>
               <div className="relative">
                 <div className="ease-in-out duration-100 my-2 border-b-2 border-b-transparent text-white role-nav hover:text-gray-500">
                   <span

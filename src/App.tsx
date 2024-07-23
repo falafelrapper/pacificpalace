@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
 import "./App.scss"
 import Header from "./components/Header"
@@ -6,7 +6,9 @@ import Header from "./components/Header"
 const Animation = () => {
   return (
     <div className="fixed inset-0 -z-10 opacity-0 bg-black flex items-center justify-center text-white font-arial animate-intro">
-      <h1 className="text-9xl font-bold animate-introText">Pacific Palace</h1>
+      <h1 className="text-9xl font-bold animate-introText font-skorzhen">
+        Pacific Palace
+      </h1>
     </div>
   )
 }
@@ -23,6 +25,21 @@ const checkLastSeen = () => {
   return diffInHours < 24
 }
 
+const ScrollToHashElement = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1))
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
+    }
+  }, [location])
+
+  return null
+}
+
 function App() {
   const [showAnimation, setShowAnimation] = useState(false)
 
@@ -34,13 +51,12 @@ function App() {
   }, [])
 
   return (
-    <>
-      <div className="antialiased font-proximaNova">
-        {showAnimation && <Animation />}
-        <Header />
-        <Outlet />
-      </div>
-    </>
+    <div className="antialiased font-proximaNova">
+      {showAnimation && <Animation />}
+      <ScrollToHashElement />
+      <Header />
+      <Outlet />
+    </div>
   )
 }
 

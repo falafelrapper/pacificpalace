@@ -11,6 +11,7 @@ export default {
         arial: ["Arial", "verdana", "sans-serif"],
         futuraPt: ["futura-pt"],
         proximaNova: ["proxima-nova"],
+        skorzhen: ["Skorzhen"],
       },
       keyframes: {
         fadeIn: {

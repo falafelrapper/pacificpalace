@@ -5,6 +5,7 @@ import "./index.scss"
 
 import Home from "./pages/Home.tsx"
 import NotFound from "./pages/NotFound.tsx"
+import Bio from "./pages/Bio.tsx"
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "/bio",
+        element: <Bio />,
       },
     ],
   },

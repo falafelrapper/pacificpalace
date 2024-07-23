@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Skorzhen";
+  src: url("/fonts/FTY SKORZHEN NCV.otf");
+  src: url("/fonts/FTY SKORZHEN NCV.otf") format("opentype"),
+    url("/fonts/FTY SKORZHEN NCV.ttf") format("truetype");
+}

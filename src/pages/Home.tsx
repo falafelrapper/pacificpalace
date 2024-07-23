@@ -79,7 +79,7 @@ const Home: React.FC = () => {
     <div className="animate-fadeIn">
       <div id="cover" className="cover relative z-40">
         <img
-          className="header-img absolute"
+          className="header-img absolute pointer-events-none"
           src="/img/james_red.jpg"
           alt="Cover"
         />
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
         <p className="z-30 text-3xl">No upcoming shows currently</p>
 
         <img
-          className="cover-img absolute min-w-full select-none"
+          className="cover-img absolute min-w-full pointer-events-none"
           src="/img/james_blue.jpg"
           alt="Cover"
         />
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
           ></iframe>
         </div>
         <img
-          className="cover-img video-img absolute"
+          className="cover-img video-img absolute pointer-events-none"
           src="/img/band_purple.jpg"
           alt="Cover"
         />

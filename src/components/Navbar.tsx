@@ -7,7 +7,7 @@ import {
   faTiktok,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
-
+import { Link } from "react-router-dom"
 import { useState } from "react"
 
 const Navbar = () => {
@@ -16,12 +16,15 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden lg:flex text-white">
-        <a href="#tour" className="mx-3 link-hover">
+        <Link to="/bio" className="mx-3 link-hover">
+          Bio
+        </Link>
+        <Link to="/#tour" className="mx-3 link-hover">
           Shows
-        </a>
-        <a className="mx-3 link-hover" href="#videos">
+        </Link>
+        <Link className="mx-3 link-hover" to="/#videos">
           Videos
-        </a>
+        </Link>
 
         <div
           className="flex items-center mx-3 relative"
