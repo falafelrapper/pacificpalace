@@ -10,13 +10,15 @@ const Bio = () => {
             alt="James Centeno"
           />
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            The culmination project of LA native James Centeno, Pacific Palace
+            crafts a dreamy spell on indie rock, drawing heavy influence from
+            artists of the 80s and post-punk revival of the early 2000s.
+            Bringing together classic synthesizers, acoustic/electric guitar,
+            drum machines, and melancholy vocals, Pacific Palace explores common
+            human themes through his DIY production. Working with frequent
+            collaborator Brian Gutierrez, he embarks on a career of re-imagining
+            a classic sound through a modern lens on his debut EP{" "}
+            <strong>EXPOSURE THERAPY</strong>.
           </p>
         </div>
       </div>
