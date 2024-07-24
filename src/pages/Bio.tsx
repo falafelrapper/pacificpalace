@@ -2,7 +2,7 @@ const Bio = () => {
   return (
     <>
       <div className="flex font-arial flex-col items-center pt-20 text-white">
-        <h1 className="text-5xl font-bold">ABOUT US</h1>
+        <h1 className="text-5xl font-bold">BIO</h1>
         <div className="flex flex-col lg:flex-row items-center justify-evenly py-10">
           <img
             className="w-56 lg:w-1/3 object-cover object-center"
