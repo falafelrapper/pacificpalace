@@ -1,9 +1,9 @@
 const Bio = () => {
   return (
     <>
-      <div className="flex font-arial flex-col items-center pt-20 text-white">
+      <main className="flex font-arial flex-col items-center pt-20 text-white">
         <h1 className="text-5xl font-bold">BIO</h1>
-        <div className="flex flex-col h-fit lg:flex-row items-center justify-evenly py-10">
+        <section className="flex flex-col h-fit lg:flex-row items-center justify-evenly py-10">
           <img
             className="w-56 lg:h-[550px] lg:w-[550px] object-cover object-center"
             src="/img/CIAL.jpg"
@@ -25,9 +25,9 @@ const Bio = () => {
             src="/img/band_purple.jpg"
             alt="Band playing in a dark room"
           />
-        </div>
+        </section>
 
-        <div className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
+        <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
             "Whopper, Whopper, Whopper, Whopper Junior, Double, Triple Whopper.
             Flame-grilled taste with perfect toppers. I rule this day. Lettuce,
@@ -45,9 +45,9 @@ const Bio = () => {
             src="/img/bio_bg1.jpg"
             alt="Cover"
           />
-        </div>
+        </section>
 
-        <div className="flex relative flex-col lg:flex-row items-center justify-evenly py-10">
+        <section className="flex relative flex-col lg:flex-row items-center justify-evenly py-10">
           <img
             className="w-56 lg:h-[550px] lg:w-[550px] object-cover object-center"
             src="/img/zach_bio.jpg"
@@ -70,9 +70,9 @@ const Bio = () => {
             src="/img/bio_bg2.jpg"
             alt="Cover"
           />
-        </div>
+        </section>
 
-        <div className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
+        <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
             Rickie Rey's peak interest in music started at the age of 7, when
             his grandfather gifted him a Tama drum-set. Since then, he continued
@@ -92,8 +92,8 @@ const Bio = () => {
             src="/img/bio_bg3.png"
             alt="Cover"
           />
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   )
 }

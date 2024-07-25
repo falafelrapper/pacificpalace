@@ -95,15 +95,15 @@ const Home: React.FC = () => {
   }, [])
 
   return (
-    <div className="animate-fadeIn">
-      <div id="cover" className="cover relative z-40">
+    <main className="animate-fadeIn">
+      <section id="cover" className="cover relative z-40">
         <img
           className="header-img absolute pointer-events-none"
           src="/img/james_red.jpg"
           alt="Cover"
         />
-      </div>
-      <div
+      </section>
+      <section
         id="tour"
         className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
       >
@@ -116,8 +116,8 @@ const Home: React.FC = () => {
           src="/img/james_blue.jpg"
           alt="Cover"
         />
-      </div>
-      <div
+      </section>
+      <section
         id="videos"
         className="cover scroll-section relative z-20 flex flex-col items-center"
       >
@@ -138,8 +138,8 @@ const Home: React.FC = () => {
           src="/img/band_purple.jpg"
           alt="Cover"
         />
-      </div>
-      <div
+      </section>
+      <section
         id="contact"
         className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
       >
@@ -180,8 +180,8 @@ const Home: React.FC = () => {
           src="/img/contact_bg.png"
           alt="Cover"
         />
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
