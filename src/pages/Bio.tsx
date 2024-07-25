@@ -26,6 +26,7 @@ const Bio = () => {
             alt="Band playing in a dark room"
           />
         </div>
+
         <div className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
             "Whopper, Whopper, Whopper, Whopper Junior, Double, Triple Whopper.
@@ -41,10 +42,11 @@ const Bio = () => {
           />
           <img
             className="-z-10 absolute min-w-full h-full object-cover object-center pointer-events-none"
-            src="/img/james_blue.jpg"
+            src="/img/bio_bg1.jpg"
             alt="Cover"
           />
         </div>
+
         <div className="flex relative flex-col lg:flex-row items-center justify-evenly py-10">
           <img
             className="w-56 lg:h-[550px] lg:w-[550px] object-cover object-center"
@@ -65,10 +67,11 @@ const Bio = () => {
           </p>
           <img
             className="-z-10 cover-img absolute min-w-full h-full pointer-events-none"
-            src="/img/james_blue.jpg"
+            src="/img/bio_bg2.jpg"
             alt="Cover"
           />
         </div>
+
         <div className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
             Rickie Rey's peak interest in music started at the age of 7, when
@@ -86,7 +89,7 @@ const Bio = () => {
           />
           <img
             className="-z-10 absolute min-w-full h-full object-cover object-center pointer-events-none"
-            src="/img/james_blue.jpg"
+            src="/img/bio_bg3.png"
             alt="Cover"
           />
         </div>

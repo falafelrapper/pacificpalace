@@ -129,38 +129,38 @@ const Home: React.FC = () => {
         <h2 className="z-50 my-10 text-5xl font-arial font-bold text-white">
           CONTACT
         </h2>
-        <div className="z-30 h-1/2 flex flex-col justify-evenly items-center">
-          <h3 className="my-5 text-4xl">Booking / Media / Press</h3>
+        <h3 className="z-50 text-4xl font-bold">Booking / Media / Press</h3>
+        <div className="z-30 h-2/3 flex flex-col justify-evenly items-center">
           <a
-            className=" my-5 text-3xl hover:text-gray-500"
+            className=" my-5 text-3xl duration-100 ease-in-out hover:text-gray-400"
             href="mailto:itspacificpalace@gmail.com"
           >
             itspacificpalace@gmail.com
           </a>
           <a
-            className={`my-2`}
+            className={``}
             href="https://www.instagram.com/pacific.palaceee/"
             target="_blank"
           >
             <FontAwesomeIcon
-              className="ease-in-out duration-100 mx-3 h-20 hover:text-gray-500"
+              className="ease-in-out duration-100 mx-3 h-20 hover:text-gray-400"
               icon={faInstagram}
             />
           </a>
           <a
-            className={`my-2`}
+            className={``}
             href="https://x.com/pacificpalaceee"
             target="_blank"
           >
             <FontAwesomeIcon
-              className="ease-in-out duration-100 mx-3 h-20 hover:text-gray-500"
+              className="ease-in-out duration-100 mx-3 h-20 hover:text-gray-400"
               icon={faTwitter}
             />
           </a>
         </div>
         <img
           className="cover-img video-img absolute pointer-events-none"
-          src="/img/band_purple.jpg"
+          src="/img/contact_bg.png"
           alt="Cover"
         />
       </div>
