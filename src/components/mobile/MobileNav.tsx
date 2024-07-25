@@ -8,6 +8,7 @@ import {
   faItunesNote,
   faSpotify,
   faTiktok,
+  faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "react-router-dom"
@@ -118,12 +119,22 @@ const MobileNav = () => {
                 >
                   <a
                     className={`my-2`}
-                    href="https://www.instagram.com/pacific.palaceee/"
+                    href="https://www.instagram.com/pacific.palaceee"
                     target="_blank"
                   >
                     <FontAwesomeIcon
                       className="ease-in-out duration-100 my-4 mx-7 hover:text-gray-900"
                       icon={faInstagram}
+                    />
+                  </a>
+                  <a
+                    className={`my-2`}
+                    href="https://x.com/pacificpalaceee"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      className="ease-in-out duration-100 my-4 mx-7 hover:text-gray-900"
+                      icon={faTwitter}
                     />
                   </a>
                   <a

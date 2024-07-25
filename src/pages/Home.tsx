@@ -1,4 +1,6 @@
 import React, { useEffect } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -113,6 +115,48 @@ const Home: React.FC = () => {
             allowFullScreen
             title="YouTube Video Player"
           ></iframe>
+        </div>
+        <img
+          className="cover-img video-img absolute pointer-events-none"
+          src="/img/band_purple.jpg"
+          alt="Cover"
+        />
+      </div>
+      <div
+        id="contact"
+        className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
+      >
+        <h2 className="z-50 my-10 text-5xl font-arial font-bold text-white">
+          CONTACT
+        </h2>
+        <div className="z-30 h-1/2 flex flex-col justify-evenly items-center">
+          <h3 className="my-5 text-4xl">Booking / Media / Press</h3>
+          <a
+            className=" my-5 text-3xl hover:text-gray-500"
+            href="mailto:itspacificpalace@gmail.com"
+          >
+            itspacificpalace@gmail.com
+          </a>
+          <a
+            className={`my-2`}
+            href="https://www.instagram.com/pacific.palaceee/"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              className="ease-in-out duration-100 mx-3 h-20 hover:text-gray-500"
+              icon={faInstagram}
+            />
+          </a>
+          <a
+            className={`my-2`}
+            href="https://x.com/pacificpalaceee"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              className="ease-in-out duration-100 mx-3 h-20 hover:text-gray-500"
+              icon={faTwitter}
+            />
+          </a>
         </div>
         <img
           className="cover-img video-img absolute pointer-events-none"

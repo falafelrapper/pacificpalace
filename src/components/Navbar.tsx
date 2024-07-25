@@ -5,6 +5,7 @@ import {
   faItunesNote,
   faSpotify,
   faTiktok,
+  faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "react-router-dom"
@@ -13,6 +14,7 @@ import { useState } from "react"
 const Navbar = () => {
   const [isSocialHovered, setIsSocialHovered] = useState(false)
   const [isListenHovered, setIsListenHovered] = useState(false)
+
   return (
     <>
       <div className="hidden lg:flex text-white">
@@ -42,12 +44,24 @@ const Navbar = () => {
               className={`my-2 ${
                 isSocialHovered ? "opacity-100" : "opacity-0"
               }`}
-              href="https://www.instagram.com/pacific.palaceee/"
+              href="https://www.instagram.com/pacific.palaceee"
               target="_blank"
             >
               <FontAwesomeIcon
-                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
+                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-500"
                 icon={faInstagram}
+              />
+            </a>
+            <a
+              className={`my-2 ${
+                isSocialHovered ? "opacity-100" : "opacity-0"
+              }`}
+              href="https://x.com/pacificpalaceee"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-500"
+                icon={faTwitter}
               />
             </a>
             <a
@@ -58,7 +72,7 @@ const Navbar = () => {
               target="_blank"
             >
               <FontAwesomeIcon
-                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
+                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-500"
                 icon={faTiktok}
               />
             </a>
@@ -70,7 +84,7 @@ const Navbar = () => {
               target="_blank"
             >
               <FontAwesomeIcon
-                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
+                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-500"
                 icon={faFacebook}
               />
             </a>
@@ -96,7 +110,7 @@ const Navbar = () => {
               target="_blank"
             >
               <FontAwesomeIcon
-                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
+                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-500"
                 icon={faItunesNote}
               />
             </a>
@@ -108,7 +122,7 @@ const Navbar = () => {
               target="_blank"
             >
               <FontAwesomeIcon
-                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
+                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-500"
                 icon={faSpotify}
               />
             </a>
@@ -120,7 +134,7 @@ const Navbar = () => {
               target="_blank"
             >
               <FontAwesomeIcon
-                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-900"
+                className="ease-in-out duration-100 mx-3 text-2xl hover:text-gray-500"
                 icon={faYoutube}
               />
             </a>
