@@ -27,6 +27,9 @@ const Navbar = () => {
         <Link className="mx-3 link-hover" to="/#videos">
           Videos
         </Link>
+        <Link className="mx-3 link-hover" to="/#contact">
+          Contact
+        </Link>
 
         <div
           className="flex items-center mx-3 relative"

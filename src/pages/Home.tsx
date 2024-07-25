@@ -30,28 +30,37 @@ const Home: React.FC = () => {
   const handleScroll = () => {
     const tourElement = document.getElementById("tour") as HTMLElement
     const videosElement = document.getElementById("videos") as HTMLElement
+    const contactElement = document.getElementById("contact") as HTMLElement
     const tourImageElement = tourElement.querySelector(
       ".cover-img"
     ) as HTMLElement
     const videosImageElement = videosElement.querySelector(
       ".cover-img"
     ) as HTMLElement
+    const contactImageElement = contactElement.querySelector(
+      ".cover-img"
+    ) as HTMLElement
 
     if (
       !tourElement ||
       !videosElement ||
+      !tourElement ||
       !tourImageElement ||
-      !videosImageElement
+      !videosImageElement ||
+      !contactImageElement
     )
       return
 
     const tourRect = tourElement.getBoundingClientRect()
     const videosRect = videosElement.getBoundingClientRect()
+    const contactRect = contactElement.getBoundingClientRect()
 
     const isTourVisible =
       tourRect.top < window.innerHeight && tourRect.bottom >= 0
     const isVideosVisible =
       videosRect.top < window.innerHeight && videosRect.bottom >= 0
+    const isContactVisible =
+      contactRect.top < window.innerHeight && contactRect.bottom >= 0
 
     if (isTourVisible) {
       const scrollPosition = window.scrollY
@@ -67,6 +76,14 @@ const Home: React.FC = () => {
       videosImageElement.style.transform = `scale(${zoomFactor})`
     } else {
       videosImageElement.style.transform = "scale(1.5)"
+    }
+
+    if (isContactVisible) {
+      const scrollPosition = window.scrollY
+      const zoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
+      contactImageElement.style.transform = `scale(${zoomFactor})`
+    } else {
+      contactImageElement.style.transform = "scale(1)"
     }
   }
 
