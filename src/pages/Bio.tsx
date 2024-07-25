@@ -1,7 +1,7 @@
 const Bio = () => {
   return (
     <>
-      <main className="flex font-arial flex-col items-center pt-20 text-white">
+      <main className="flex font-arial flex-col items-center pt-20 text-white animate-fadeIn">
         <h1 className="text-5xl font-bold">BIO</h1>
         <section className="flex flex-col h-fit lg:flex-row items-center justify-evenly py-10">
           <img
