@@ -149,7 +149,7 @@ const Home: React.FC = () => {
         <h3 className="z-50 text-4xl font-bold">Booking / Media / Press</h3>
         <div className="z-30 h-2/3 flex flex-col justify-evenly items-center">
           <a
-            className=" my-5 text-3xl duration-100 ease-in-out hover:text-gray-400"
+            className=" my-5 text-3xl duration-200 ease-in-out hover:text-gray-400"
             href="mailto:itspacificpalace@gmail.com"
           >
             itspacificpalace@gmail.com
@@ -160,7 +160,7 @@ const Home: React.FC = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="ease-in-out duration-100 mx-3 h-20 hover:text-gray-400"
+              className="ease-in-out duration-200 mx-3 h-20 hover:text-gray-400"
               icon={faInstagram}
             />
           </a>
@@ -170,7 +170,7 @@ const Home: React.FC = () => {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="ease-in-out duration-100 mx-3 h-20 hover:text-gray-400"
+              className="ease-in-out duration-200 mx-3 h-20 hover:text-gray-400"
               icon={faTwitter}
             />
           </a>

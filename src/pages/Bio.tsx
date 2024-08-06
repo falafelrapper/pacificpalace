@@ -29,15 +29,17 @@ const Bio = () => {
 
         <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
-            "Whopper, Whopper, Whopper, Whopper Junior, Double, Triple Whopper.
-            Flame-grilled taste with perfect toppers. I rule this day. Lettuce,
-            mayo, pickle, ketchup. It's okay if I don't want that. Impossible or
-            bacon Whopper. Any Whopper my way. You rule, you're seizin' the day.
-            At BK, have it your way. You rule!" - Brian Gutierrez
+            Brian Gutierrez was born and raised in the heart of Downtown Los
+            Angeles and like others with him was subject to the city’s artistic
+            heartbeat. It wasn’t until at the age of 10 Brian started playing
+            music for his church and from there had multiple levels of
+            instruction both formal and informal. With a deep appreciation for
+            all things artistic and intentional, he hopes to spark a desire in
+            people that goes beyond just enjoying music.
           </p>
           <img
             className="w-56 lg:h-[550px] lg:w-[550px] object-cover object-center"
-            src="/img/brian_bio.jpg"
+            src="/img/brian_bio.png"
             alt="Brian Gutierrez"
           />
           <img
@@ -53,7 +55,7 @@ const Bio = () => {
             src="/img/zach_bio.jpg"
             alt="Zachary Roy"
           />
-          <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
+          <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold text-wrap">
             With a dad who was insanely in love with Rush and Neil Peart's
             drumming style and a love for rhythm games, Zachary Roy was
             surrounded by this love of percussion from a young age. At 13, he
@@ -62,8 +64,13 @@ const Bio = () => {
             variety of different styles, with a bias towards electronic pop and
             metal. He currently plays with both Pacific Palace and Meishi Smile,
             but when he's not laying a fat blast beat, he also works as a
-            software engineer. In fact, you are currently on one of his websites
-            that he designed.
+            software engineer. In fact,{" "}
+            <a
+              className="inline duration-200 underline ease-in-out hover:text-gray-400"
+              href="https://zacharyroy.com/"
+            >
+              you are currently on one of his sites that he designed.
+            </a>
           </p>
           <img
             className="-z-10 cover-img absolute min-w-full h-full pointer-events-none"
