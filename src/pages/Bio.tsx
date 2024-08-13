@@ -5,7 +5,7 @@ const Bio = () => {
         <h1 className="text-5xl font-bold">BIO</h1>
         <section className="flex flex-col h-fit lg:flex-row items-center justify-evenly py-10">
           <img
-            className="w-56 lg:h-[550px] lg:w-[550px] object-cover object-center"
+            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
             src="/img/CIAL.jpg"
             alt="James Centeno"
           />
@@ -22,7 +22,7 @@ const Bio = () => {
           </p>
           <img
             className="absolute -z-10 top-0 h-full min-w-full object-center object-cover pointer-events-none select-none"
-            src="/img/band_purple.jpg"
+            src="/img/festival3.jpg"
             alt="Band playing in a dark room"
           />
         </section>
@@ -38,7 +38,7 @@ const Bio = () => {
             people that goes beyond just enjoying music.
           </p>
           <img
-            className="w-56 lg:h-[550px] lg:w-[550px] object-cover object-center"
+            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
             src="/img/brian_bio.png"
             alt="Brian Gutierrez"
           />
@@ -51,7 +51,7 @@ const Bio = () => {
 
         <section className="flex relative flex-col lg:flex-row items-center justify-evenly py-10">
           <img
-            className="w-56 lg:h-[550px] lg:w-[550px] object-cover object-center"
+            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
             src="/img/zach_bio.jpg"
             alt="Zachary Roy"
           />
@@ -74,7 +74,7 @@ const Bio = () => {
           </p>
           <img
             className="-z-10 cover-img absolute min-w-full h-full pointer-events-none"
-            src="/img/bio_bg2.jpg"
+            src="/img/band_bw.jpg"
             alt="Cover"
           />
         </section>
@@ -90,7 +90,7 @@ const Bio = () => {
             and since then he continues to learn more in perfecting his craft.
           </p>
           <img
-            className="w-56 lg:h-[550px] lg:w-[550px] object-cover object-center"
+            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
             src="/img/rickie_bio.jpg"
             alt="Rickie Rey"
           />

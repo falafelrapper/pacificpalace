@@ -78,6 +78,14 @@ const Home: React.FC = () => {
       videosImageElement.style.transform = "scale(1.5)"
     }
 
+    // if (isVideosVisible) {
+    //   const scrollPosition = window.scrollY
+    //   const zoomFactor = 1 - scrollPosition / 10 // Adjust this factor as needed
+    //   videosImageElement.style.transform = `translateY(${zoomFactor}rem)`
+    // } else {
+    //   videosImageElement.style.transform = "translateY(0rem)"
+    // }
+
     if (isContactVisible) {
       const scrollPosition = window.scrollY
       const zoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
@@ -143,9 +151,7 @@ const Home: React.FC = () => {
         id="contact"
         className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
       >
-        <h2 className="z-50 my-10 text-5xl font-arial font-bold text-white">
-          CONTACT
-        </h2>
+        <h2 className="z-50 my-10 text-5xl font-arial font-bold">CONTACT</h2>
         <h3 className="z-50 text-4xl font-bold">Booking / Media / Press</h3>
         <div className="z-30 h-2/3 flex flex-col justify-evenly items-center">
           <a
@@ -177,7 +183,7 @@ const Home: React.FC = () => {
         </div>
         <img
           className="cover-img video-img absolute pointer-events-none"
-          src="/img/contact_bg.png"
+          src="/img/festival3.jpg"
           alt="Cover"
         />
       </section>
