@@ -44,7 +44,7 @@ const Bio = () => {
           />
           <img
             className="-z-10 absolute min-w-full h-full object-cover object-center pointer-events-none"
-            src="/img/bio_bg1.jpg"
+            src="/img/forest-bg.png"
             alt="Cover"
           />
         </section>
