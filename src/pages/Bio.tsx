@@ -21,10 +21,11 @@ const Bio = () => {
             <strong>EXPOSURE THERAPY</strong>.
           </p>
           <img
-            className="absolute -z-10 top-0 h-full min-w-full object-center object-cover pointer-events-none select-none"
+            className="absolute -z-20 top-0 h-full min-w-full object-center object-cover pointer-events-none select-none"
             src="/img/festival3.jpg"
             alt="Band playing in a dark room"
           />
+          <div className="h-full w-full -z-10 bg-gray-900/60 absolute"></div>
         </section>
 
         <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
@@ -47,6 +48,7 @@ const Bio = () => {
             src="/img/forest-bg.png"
             alt="Cover"
           />
+          <div className="h-full w-full -z-10 bg-gray-800/50 absolute"></div>
         </section>
 
         <section className="flex relative flex-col lg:flex-row items-center justify-evenly py-10">
@@ -77,6 +79,7 @@ const Bio = () => {
             src="/img/band_bw.jpg"
             alt="Cover"
           />
+          <div className="h-full w-full -z-10 bg-black/30 absolute"></div>
         </section>
 
         <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
@@ -99,6 +102,7 @@ const Bio = () => {
             src="/img/bio_bg3.png"
             alt="Cover"
           />
+          <div className="h-full w-full -z-10 bg-gray-900/60 absolute"></div>
         </section>
       </main>
     </>
