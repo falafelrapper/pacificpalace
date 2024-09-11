@@ -5,7 +5,7 @@ const Bio = () => {
         <h1 className="text-5xl font-bold">BIO</h1>
         <section className="flex flex-col h-fit lg:flex-row items-center justify-evenly py-10">
           <img
-            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
+            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center rounded-md"
             src="/img/CIAL.jpg"
             alt="James Centeno"
           />
@@ -38,7 +38,7 @@ const Bio = () => {
             really connect with it.
           </p>
           <img
-            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
+            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center rounded-md"
             src="/img/brian_bio.png"
             alt="Brian Gutierrez"
           />
@@ -52,7 +52,7 @@ const Bio = () => {
 
         <section className="flex relative flex-col lg:flex-row items-center justify-evenly py-10">
           <img
-            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
+            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center rounded-md"
             src="/img/zach_bio.jpg"
             alt="Zachary Roy"
           />
@@ -86,8 +86,8 @@ const Bio = () => {
             expanding his musical knowledge.
           </p>
           <img
-            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
-            src="/img/rickie_bio.jpg"
+            className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center rounded-md"
+            src="/img/rickie_bio_new.jpg"
             alt="Rickie Rey"
           />
           <img
