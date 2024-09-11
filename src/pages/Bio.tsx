@@ -25,17 +25,17 @@ const Bio = () => {
             src="/img/festival3.jpg"
             alt="Band playing in a dark room"
           />
-          <div className="h-full w-full -z-10 bg-gray-900/60 absolute"></div>
+          <div className="h-full w-full -z-10 bg-gray-900/60 absolute" />
         </section>
 
         <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
-            Brian Gutierrez grew up in the heart of Downtown Los Angeles. He
-            started playing music for his church when he was just 10 years old,
-            and since then, he’s had a mix of formal and informal musical
-            training. With a deep appreciation for all things creative, Brian
-            wants to inspire people to go beyond just enjoying music and really
-            connect with it.
+            Brian Gutierrez was born and raised in the heart of Downtown Los
+            Angeles. He started playing music for his church when he was just 10
+            years old, and since then, he’s had a mix of formal and informal
+            musical training. With a deep appreciation for all things creative,
+            Brian wants to inspire people to go beyond just enjoying music and
+            really connect with it.
           </p>
           <img
             className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
@@ -44,10 +44,10 @@ const Bio = () => {
           />
           <img
             className="-z-10 absolute min-w-full h-full object-cover object-center pointer-events-none"
-            src="/img/forest-bg.png"
+            src="/img/bio_bg3.png"
             alt="Cover"
           />
-          <div className="h-full w-full -z-10 bg-gray-800/50 absolute"></div>
+          <div className="h-full w-full -z-10 bg-gray-900/60 absolute" />
         </section>
 
         <section className="flex relative flex-col lg:flex-row items-center justify-evenly py-10">
@@ -59,37 +59,31 @@ const Bio = () => {
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold text-wrap">
             With a dad who was insanely in love with Rush and Neil Peart's
             drumming style and a love for rhythm games, Zachary Roy was
-            surrounded by this love of percussion from a young age. At 13, he
-            had seen a drum cover that a friend forwarded over to him that
-            instantly drove him to a passion of learning drums. He plays a
-            variety of different styles, with a bias towards electronic pop and
-            metal. He currently plays with both Pacific Palace and Meishi Smile,
-            but when he's not laying a fat blast beat, he also works as a
-            software engineer. In fact,{" "}
-            <a
-              className="inline duration-200 underline ease-in-out hover:text-gray-400"
-              href="https://zacharyroy.com/"
-            >
-              you are currently on one of his sites that he designed.
-            </a>
+            surrounded by this love of percussion from a young age. At 13, a
+            drum cover sent by a friend instantly drove him to a passion of
+            learning drums. He plays a variety of different drumming styles, but
+            with a bias leaning towards electronic pop and metal. He currently
+            plays with both Pacific Palace and Meishi Smile, but when he's not
+            laying a fat blast beat, he also works as a software engineer.
           </p>
           <img
             className="-z-10 cover-img absolute min-w-full h-full pointer-events-none"
             src="/img/band_bw.jpg"
             alt="Cover"
           />
-          <div className="h-full w-full -z-10 bg-black/30 absolute"></div>
+          <div className="h-full w-full -z-10 bg-black/30 absolute" />
         </section>
 
         <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
-            Rickie Rey's peak interest in music started at the age of 7, when
-            his grandfather gifted him a Tama drum-set. Since then, he continued
-            to play drums, from Black Flag to Nirvana and the older he got, he
-            began to get more into experimental/psychedelic rock. During
-            college, he transitioned to be a guitarist and auditioned to be in
-            commercial ensemble. His obsession in guitar pedals and gear began
-            and since then he continues to learn more in perfecting his craft.
+            Rickie Rey’s passion for music ignited at age 7 when his grandfather
+            gifted him a Tama drum set. From then on he was hooked, drumming
+            along to everything from Black Flag to Nirvana. As he grew older, he
+            started delving into experimental and psychedelic rock. Once he got
+            to college, Rickie made the switch to guitar and auditioned for a
+            commercial ensemble, sparking a fascination with guitar pedals and
+            gear. Since then, he’s been dedicated to perfecting his craft and
+            expanding his musical knowledge.
           </p>
           <img
             className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
@@ -98,10 +92,10 @@ const Bio = () => {
           />
           <img
             className="-z-10 absolute min-w-full h-full object-cover object-center pointer-events-none"
-            src="/img/bio_bg3.png"
+            src="/img/forest-bg.png"
             alt="Cover"
           />
-          <div className="h-full w-full -z-10 bg-gray-900/60 absolute"></div>
+          <div className="h-full w-full -z-10 bg-gray-800/50 absolute" />
         </section>
       </main>
     </>
