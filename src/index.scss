@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://use.typekit.net/tuo8pjc.css");
 
 @font-face {
   font-family: "Skorzhen";
@@ -8,3 +6,7 @@
   src: url("/fonts/FTY SKORZHEN NCV.otf") format("opentype"),
     url("/fonts/FTY SKORZHEN NCV.ttf") format("truetype");
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

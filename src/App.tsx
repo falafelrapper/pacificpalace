@@ -51,7 +51,7 @@ function App() {
   }, [])
 
   return (
-    <div className="antialiased font-proximaNova">
+    <div className="font-proximaNova">
       {showAnimation && <Animation />}
       <ScrollToHashElement />
       <Header />

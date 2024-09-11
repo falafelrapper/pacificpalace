@@ -12,6 +12,7 @@ export default {
         futuraPt: ["futura-pt"],
         proximaNova: ["proxima-nova"],
         skorzhen: ["Skorzhen"],
+        nueHassText: ["neue-haas-grotesk-text", "sans-serif"],
       },
       keyframes: {
         fadeIn: {

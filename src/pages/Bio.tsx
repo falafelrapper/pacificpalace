@@ -1,7 +1,7 @@
 const Bio = () => {
   return (
     <>
-      <main className="flex font-arial flex-col items-center pt-20 text-white animate-fadeIn">
+      <main className="flex flex-col items-center pt-20 text-white animate-fadeIn font-nueHassText">
         <h1 className="text-5xl font-bold">BIO</h1>
         <section className="flex flex-col h-fit lg:flex-row items-center justify-evenly py-10">
           <img
@@ -30,13 +30,12 @@ const Bio = () => {
 
         <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
-            Brian Gutierrez was born and raised in the heart of Downtown Los
-            Angeles and like others with him was subject to the city’s artistic
-            heartbeat. It wasn’t until at the age of 10 Brian started playing
-            music for his church and from there had multiple levels of
-            instruction both formal and informal. With a deep appreciation for
-            all things artistic and intentional, he hopes to spark a desire in
-            people that goes beyond just enjoying music.
+            Brian Gutierrez grew up in the heart of Downtown Los Angeles. He
+            started playing music for his church when he was just 10 years old,
+            and since then, he’s had a mix of formal and informal musical
+            training. With a deep appreciation for all things creative, Brian
+            wants to inspire people to go beyond just enjoying music and really
+            connect with it.
           </p>
           <img
             className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center"
