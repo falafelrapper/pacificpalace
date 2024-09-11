@@ -87,7 +87,7 @@ const Bio = () => {
           </p>
           <img
             className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center rounded-md"
-            src="/img/rickie_bio_new.jpg"
+            src="/img/rickie_bio.jpg"
             alt="Ricky Rey"
           />
           <img
