@@ -76,11 +76,11 @@ const Bio = () => {
 
         <section className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10">
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
-            Rickie Rey’s passion for music ignited at age 7 when his grandfather
+            Ricky Rey’s passion for music ignited at age 7 when his grandfather
             gifted him a Tama drum set. From then on he was hooked, drumming
             along to everything from Black Flag to Nirvana. As he grew older, he
             started delving into experimental and psychedelic rock. Once he got
-            to college, Rickie made the switch to guitar and auditioned for a
+            to college, Ricky made the switch to guitar and auditioned for a
             commercial ensemble, sparking a fascination with guitar pedals and
             gear. Since then, he’s been dedicated to perfecting his craft and
             expanding his musical knowledge.
@@ -88,7 +88,7 @@ const Bio = () => {
           <img
             className="w-56 lg:h-[32rem] lg:w-[32rem] object-cover object-center rounded-md"
             src="/img/rickie_bio_new.jpg"
-            alt="Rickie Rey"
+            alt="Ricky Rey"
           />
           <img
             className="-z-10 absolute min-w-full h-full object-cover object-center pointer-events-none"

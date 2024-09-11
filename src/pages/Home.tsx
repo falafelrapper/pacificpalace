@@ -186,6 +186,7 @@ const Home: React.FC = () => {
           src="/img/festival3.jpg"
           alt="Cover"
         />
+        <div className="h-full w-full z-10 bg-gray-800/60 absolute" />
       </section>
     </main>
   )
