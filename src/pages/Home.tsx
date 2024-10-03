@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import Event from "../components/Event.tsx"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
@@ -117,7 +118,13 @@ const Home: React.FC = () => {
       >
         <h2 className="z-30 my-10 text-5xl font-bold">SHOWS</h2>
 
-        <p className="z-30 text-3xl">No upcoming shows currently</p>
+        {/* <p className="z-30 text-3xl">No upcoming shows currently</p> */}
+        <Event
+          name="Hotel Cafe"
+          date="Oct. 12th, 2024"
+          area="Los Angeles, CA"
+          ticket_link="https://new.hotelcafe.com/event/pacific-palace/"
+        />
 
         <img
           className="cover-img absolute min-w-full pointer-events-none"
