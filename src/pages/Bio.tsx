@@ -29,35 +29,35 @@ const Bio = () => {
     )
       return
 
-    const jamesRect = jamesElement.getBoundingClientRect()
-    const brianRect = brianElement.getBoundingClientRect()
-    const zachRect = zachElement.getBoundingClientRect()
-    const rickyRect = rickyElement.getBoundingClientRect()
+    // const jamesRect = jamesElement.getBoundingClientRect()
+    // const brianRect = brianElement.getBoundingClientRect()
+    // const zachRect = zachElement.getBoundingClientRect()
+    // const rickyRect = rickyElement.getBoundingClientRect()
 
-    const isJamesVisible =
-      jamesRect.top < window.innerHeight && jamesRect.bottom >= 0
-    const isBrianVisible =
-      brianRect.top < window.innerHeight && brianRect.bottom >= 0
-    const isZachVisible =
-      zachRect.top < window.innerHeight && zachRect.bottom >= 0
-    const isRickyVisible =
-      rickyRect.top < window.innerHeight && rickyRect.bottom >= 0
+    const scrollPosition = window.scrollY
 
-    if (isJamesVisible) {
-      const scrollPosition = window.scrollY
-      const zoomFactor = 0 - scrollPosition / 100 // Adjust this factor as needed
-      jamesImageElement.style.transform = `translateY(${zoomFactor}rem)`
-    } else {
-      jamesImageElement.style.transform = "translateY(0)"
-    }
+    // const isJamesVisible =
+    //   jamesRect.top < window.innerHeight && jamesRect.bottom >= 0
+    // const isBrianVisible =
+    //   brianRect.top < window.innerHeight && brianRect.bottom >= 0
+    // const isZachVisible =
+    //   zachRect.top < window.innerHeight && zachRect.bottom >= 0
+    // const isRickyVisible =
+    //   rickyRect.top < window.innerHeight && rickyRect.bottom >= 0
 
-    if (isBrianVisible) {
-      const scrollPosition = window.scrollY
-      const zoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
-      brianImageElement.style.transform = `scale(${zoomFactor})`
-    } else {
-      brianImageElement.style.transform = "scale(1)"
-    }
+    // if (isJamesVisible) {
+    const jamesZoomFactor = 0 - scrollPosition / 100 // Adjust this factor as needed
+    jamesImageElement.style.transform = `translateY(${jamesZoomFactor}rem)`
+    // } else {
+    // jamesImageElement.style.transform = "translateY(0)"
+    // }
+
+    // if (isBrianVisible) {
+    const brianZoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
+    brianImageElement.style.transform = `scale(${brianZoomFactor})`
+    // } else {
+    // brianImageElement.style.transform = "scale(1)"
+    // }
 
     // if (isbrianVisible) {
     //   const scrollPosition = window.scrollY
@@ -67,21 +67,19 @@ const Bio = () => {
     //   brianImageElement.style.transform = "translateY(0rem)"
     // }
 
-    if (isZachVisible) {
-      const scrollPosition = window.scrollY
-      const zoomFactor = 0 + scrollPosition / 400 // Adjust this factor as needed
-      zachImageElement.style.transform = `translateY(${zoomFactor}rem) scale(1.5)`
-    } else {
-      zachImageElement.style.transform = "translateY(0) scale(1.5)"
-    }
+    // if (isZachVisible) {
+    const zachZoomFactor = 0 + scrollPosition / 400 // Adjust this factor as needed
+    zachImageElement.style.transform = `translateY(${zachZoomFactor}rem) scale(1.5)`
+    // } else {
+    // zachImageElement.style.transform = "translateY(0) scale(1.5)"
+    // }
 
-    if (isRickyVisible) {
-      const scrollPosition = window.scrollY
-      const zoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
-      rickyImageElement.style.transform = `translateY(${zoomFactor})`
-    } else {
-      rickyImageElement.style.transform = "translateY(1)"
-    }
+    // if (isRickyVisible) {
+    const RickyZoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
+    rickyImageElement.style.transform = `scale(${RickyZoomFactor})`
+    // } else {
+    // rickyImageElement.style.transform = "translateY(1)"
+    // }
   }
 
   useEffect(() => {
@@ -105,15 +103,16 @@ const Bio = () => {
             alt="James Centeno"
           />
           <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
-            The culmination project of LA native James Centeno, Pacific Palace
-            crafts a dreamy spell on indie rock, drawing heavy influence from
-            artists of the 80s and post-punk revival of the early 2000s.
-            Bringing together classic synthesizers, acoustic/electric guitar,
-            drum machines, and melancholy vocals, Pacific Palace explores common
-            human themes through his DIY production. Working with frequent
-            collaborator Brian Gutierrez, he embarks on a career of re-imagining
-            a classic sound through a modern lens on his debut EP{" "}
-            <strong>EXPOSURE THERAPY</strong>.
+            James Centeno’s culmination project, Pacific Palace, weaves a dreamy
+            spell within the indie rock landscape, drawing rich inspiration from
+            80s icons and the post-punk revival of the early 2000s. Melding
+            classic synthesizers, acoustic and electric guitars, drum machines,
+            and haunting vocals, Pacific Palace delves into universal human
+            themes through a distinctive DIY production style. Collaborating
+            closely with frequent partner Brian Gutierrez, along with Zachary
+            Roy and Ricky Reyes enhancing the live experience, Centeno embarks
+            on a journey to reimagine classic sounds through a contemporary
+            lens..
           </p>
           <img
             className="absolute -z-20 top-0 h-full min-w-full object-center object-cover pointer-events-none select-none bg-pic"

@@ -52,48 +52,46 @@ const Home: React.FC = () => {
     )
       return
 
-    const tourRect = tourElement.getBoundingClientRect()
-    const videosRect = videosElement.getBoundingClientRect()
-    const contactRect = contactElement.getBoundingClientRect()
+    // const tourRect = tourElement.getBoundingClientRect()
+    // const videosRect = videosElement.getBoundingClientRect()
+    // const contactRect = contactElement.getBoundingClientRect()
+    const scrollPosition = window.scrollY
 
-    const isTourVisible =
-      tourRect.top < window.innerHeight && tourRect.bottom >= 0
-    const isVideosVisible =
-      videosRect.top < window.innerHeight && videosRect.bottom >= 0
-    const isContactVisible =
-      contactRect.top < window.innerHeight && contactRect.bottom >= 0
+    // const isTourVisible =
+    //   tourRect.top < window.innerHeight && tourRect.bottom >= 0
+    // const isVideosVisible =
+    //   videosRect.top < window.innerHeight && videosRect.bottom >= 0
+    // const isContactVisible =
+    //   contactRect.top < window.innerHeight && contactRect.bottom >= 0
 
-    if (isTourVisible) {
-      const scrollPosition = window.scrollY
-      const zoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
-      tourImageElement.style.transform = `scale(${zoomFactor})`
-    } else {
-      tourImageElement.style.transform = "scale(1)"
-    }
-
-    if (isVideosVisible) {
-      const scrollPosition = window.scrollY
-      const zoomFactor = 1.5 - scrollPosition / 10000 // Adjust this factor as needed
-      videosImageElement.style.transform = `scale(${zoomFactor})`
-    } else {
-      videosImageElement.style.transform = "scale(1.5)"
-    }
+    // if (isTourVisible) {
+    const tourZoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
+    tourImageElement.style.transform = `scale(${tourZoomFactor})`
+    // } else {
+    // tourImageElement.style.transform = "scale(1)"
+    // }
 
     // if (isVideosVisible) {
-    //   const scrollPosition = window.scrollY
+    const videoZoomFactor = 1.5 - scrollPosition / 10000 // Adjust this factor as needed
+    videosImageElement.style.transform = `scale(${videoZoomFactor})`
+    // } else {
+    // videosImageElement.style.transform = "scale(1.5)"
+    // }
+
+    // if (isVideosVisible) {
+    //
     //   const zoomFactor = 1 - scrollPosition / 10 // Adjust this factor as needed
     //   videosImageElement.style.transform = `translateY(${zoomFactor}rem)`
     // } else {
     //   videosImageElement.style.transform = "translateY(0rem)"
     // }
 
-    if (isContactVisible) {
-      const scrollPosition = window.scrollY
-      const zoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
-      contactImageElement.style.transform = `scale(${zoomFactor})`
-    } else {
-      contactImageElement.style.transform = "scale(1)"
-    }
+    // if (isContactVisible) {
+    const contactZoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
+    contactImageElement.style.transform = `scale(${contactZoomFactor})`
+    // } else {
+    // contactImageElement.style.transform = "scale(1)"
+    // }
   }
 
   useEffect(() => {

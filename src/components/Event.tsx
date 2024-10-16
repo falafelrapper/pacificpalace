@@ -10,9 +10,9 @@ const Event = ({
   ticket_link: string
 }) => {
   return (
-    <div className="flex z-30 items-center content-between bg-gray-700/90 rounded-lg p-3 my-5 w-[35vw] min-w-[30rem]">
+    <div className="flex z-30 items-center content-between bg-gray-700/90 rounded-lg p-3 my-5 lg:w-[35vw] w-[90vw] lg:min-w-[30rem]">
       <div className="mr-auto">
-        <h3 className="text-4xl">{name}</h3>
+        <h3 className="text-3xl lg:text-4xl">{name}</h3>
         <p className="text-sm">
           {date} - {area}
         </p>
