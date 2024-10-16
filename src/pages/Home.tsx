@@ -120,10 +120,24 @@ const Home: React.FC = () => {
 
         {/* <p className="z-30 text-3xl">No upcoming shows currently</p> */}
         <Event
-          name="Hotel Cafe"
-          date="Oct. 12th, 2024"
+          name="ROCKTHEVOTE!"
+          date="Oct. 19th, 2024"
+          area="Olvera St. in DTLA"
+          ticket_link="https://www.instagram.com/p/DBAFuufyfio/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        />
+
+        <Event
+          name="Music Night Under the Palapa"
+          date="Oct. 25th, 2024"
           area="Los Angeles, CA"
-          ticket_link="https://new.hotelcafe.com/event/pacific-palace/"
+          ticket_link="https://www.musicnightunderthepalapa.com/"
+        />
+
+        <Event
+          name="The Mint"
+          date="Nov. 30th, 2024"
+          area="Los Angeles, CA"
+          ticket_link="https://themintla.com/listing/pacific-palace/"
         />
 
         <img
@@ -190,7 +204,7 @@ const Home: React.FC = () => {
         </div>
         <img
           className="cover-img video-img absolute pointer-events-none"
-          src="/img/festival3.jpg"
+          src="/img/HotelCafePP.jpg"
           alt="Cover"
         />
         <div className="h-full w-full z-10 bg-gray-800/60 absolute" />

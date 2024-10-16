@@ -10,19 +10,19 @@ const Event = ({
   ticket_link: string
 }) => {
   return (
-    <div className="flex z-30 items-center">
-      <div className="mr-40">
+    <div className="flex z-30 items-center content-between bg-gray-700/90 rounded-lg p-3 my-5 w-[35vw] min-w-[30rem]">
+      <div className="mr-auto">
         <h3 className="text-4xl">{name}</h3>
         <p className="text-sm">
           {date} - {area}
         </p>
       </div>
       <a
-        className="bg-orange-500 rounded-3xl py-1 px-2 text-lg"
+        className="ease-in-out duration-200 bg-orange-500 hover:bg-orange-600 active:bg-orange-700 rounded-3xl py-1 px-2 text-lg text-nowrap ml-auto min-w-fit"
         href={ticket_link}
         target="_blank"
       >
-        Purchase Tickets
+        View Details
       </a>
     </div>
   )
