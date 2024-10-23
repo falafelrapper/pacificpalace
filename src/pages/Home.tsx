@@ -117,18 +117,19 @@ const Home: React.FC = () => {
         <h2 className="z-30 my-10 text-5xl font-bold">SHOWS</h2>
 
         {/* <p className="z-30 text-3xl">No upcoming shows currently</p> */}
-        <Event
-          name="ROCKTHEVOTE!"
-          date="Oct. 19th, 2024"
-          area="Olvera St. in DTLA"
-          ticket_link="https://www.instagram.com/p/DBAFuufyfio/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-        />
 
         <Event
           name="Music Night Under the Palapa"
           date="Oct. 25th, 2024"
           area="Los Angeles, CA"
           ticket_link="https://www.musicnightunderthepalapa.com/"
+        />
+
+        <Event
+          name="Footsies"
+          date="Nov. 7th, 2024"
+          area="Highland Park, CA"
+          ticket_link="https://www.instagram.com/footsiesbar"
         />
 
         <Event
