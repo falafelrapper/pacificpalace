@@ -119,10 +119,10 @@ const Home: React.FC = () => {
         {/* <p className="z-30 text-3xl">No upcoming shows currently</p> */}
 
         <Event
-          name="The Mint"
-          date="Nov. 30th, 2024"
-          area="Los Angeles, CA"
-          ticket_link="https://themintla.com/listing/pacific-palace/"
+          name="Bar Lubitsch"
+          date="Jan. 9th, 2025"
+          area="West Hollywood, CA"
+          ticket_link="https://www.barlubitsch.com/"
         />
 
         <img
