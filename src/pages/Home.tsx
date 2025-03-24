@@ -120,9 +120,9 @@ const Home: React.FC = () => {
 
         <Event
           name="Bar Lubitsch"
-          date="Apr. 3rd, 2025"
+          date="Apr. 10th, 2025"
           area="West Hollywood, CA"
-          ticket_link="https://www.barlubitsch.com/"
+          ticket_link="https://www.eventbrite.com/e/faydean-alex-tore-izye-communitypool-pacific-palace-tickets-1277875523089?aff=ebdssbdestsearch"
         />
 
         <img
