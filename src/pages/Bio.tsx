@@ -29,11 +29,6 @@ const Bio = () => {
     )
       return
 
-    // const jamesRect = jamesElement.getBoundingClientRect()
-    // const brianRect = brianElement.getBoundingClientRect()
-    // const zachRect = zachElement.getBoundingClientRect()
-    // const rickyRect = rickyElement.getBoundingClientRect()
-
     const scrollPosition = window.scrollY
 
     // const isJamesVisible =
@@ -45,41 +40,17 @@ const Bio = () => {
     // const isRickyVisible =
     //   rickyRect.top < window.innerHeight && rickyRect.bottom >= 0
 
-    // if (isJamesVisible) {
-    const jamesZoomFactor = 0 - scrollPosition / 100 // Adjust this factor as needed
+    const jamesZoomFactor = 0 - scrollPosition / 110
     jamesImageElement.style.transform = `translateY(${jamesZoomFactor}rem)`
-    // } else {
-    // jamesImageElement.style.transform = "translateY(0)"
-    // }
 
-    // if (isBrianVisible) {
-    const brianZoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
+    const brianZoomFactor = 1 + scrollPosition / 10000
     brianImageElement.style.transform = `scale(${brianZoomFactor})`
-    // } else {
-    // brianImageElement.style.transform = "scale(1)"
-    // }
 
-    // if (isbrianVisible) {
-    //   const scrollPosition = window.scrollY
-    //   const zoomFactor = 1 - scrollPosition / 10 // Adjust this factor as needed
-    //   brianImageElement.style.transform = `translateY(${zoomFactor}rem)`
-    // } else {
-    //   brianImageElement.style.transform = "translateY(0rem)"
-    // }
-
-    // if (isZachVisible) {
-    const zachZoomFactor = 0 + scrollPosition / 400 // Adjust this factor as needed
+    const zachZoomFactor = 0 + scrollPosition / 400
     zachImageElement.style.transform = `translateY(${zachZoomFactor}rem) scale(1.5)`
-    // } else {
-    // zachImageElement.style.transform = "translateY(0) scale(1.5)"
-    // }
 
-    // if (isRickyVisible) {
-    const RickyZoomFactor = 1 + scrollPosition / 10000 // Adjust this factor as needed
+    const RickyZoomFactor = 1 + scrollPosition / 10000
     rickyImageElement.style.transform = `scale(${RickyZoomFactor})`
-    // } else {
-    // rickyImageElement.style.transform = "translateY(1)"
-    // }
   }
 
   useEffect(() => {
@@ -92,7 +63,7 @@ const Bio = () => {
   return (
     <>
       <main className="flex flex-col items-center pt-20 text-white animate-fadeIn font-nueHassText">
-        <h1 className="text-5xl font-bold">BIO</h1>
+        <h1 className="text-5xl ">BIO</h1>
         <section
           id="james"
           className="flex flex-col h-fit lg:flex-row items-center justify-evenly py-10 overflow-hidden"
@@ -102,7 +73,7 @@ const Bio = () => {
             src="/img/CIAL.jpg"
             alt="James Centeno"
           />
-          <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
+          <p className="my-8 w-5/6 lg:w-1/3 text-xl ">
             James Centeno’s culmination project, Pacific Palace, weaves a dreamy
             spell within the indie rock landscape, drawing rich inspiration from
             80s icons and the post-punk revival of the early 2000s. Melding
@@ -119,14 +90,14 @@ const Bio = () => {
             src="/img/festival3.jpg"
             alt="Band playing in a dark room"
           />
-          <div className="h-full w-full -z-10 bg-gray-900/60 absolute" />
+          <div className="h-full w-full -z-10 bg-gray-900/60 absolute top-0" />
         </section>
 
         <section
           id="brian"
           className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10 overflow-hidden"
         >
-          <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
+          <p className="my-8 w-5/6 lg:w-1/3 text-xl ">
             Brian Gutierrez was born and raised in the heart of Downtown Los
             Angeles. He started playing music for his church when he was just 10
             years old, and since then, he’s had a mix of formal and informal
@@ -156,7 +127,7 @@ const Bio = () => {
             src="/img/zach_bio.jpg"
             alt="Zachary Roy"
           />
-          <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold text-wrap">
+          <p className="my-8 w-5/6 lg:w-1/3 text-xl  text-wrap">
             With a dad who was insanely in love with Rush and Neil Peart's
             drumming style and a love for rhythm games, jamesary Roy was
             surrounded by this love of percussion from a young age. At 13, a
@@ -178,7 +149,7 @@ const Bio = () => {
           id="ricky"
           className="flex relative flex-col-reverse lg:flex-row items-center justify-evenly py-10 overflow-hidden"
         >
-          <p className="my-8 w-5/6 lg:w-1/3 text-xl font-bold">
+          <p className="my-8 w-5/6 lg:w-1/3 text-xl ">
             Ricky Rey’s passion for music ignited at age 7 when his grandfather
             gifted him a Tama drum set. From then on he was hooked, drumming
             along to everything from Black Flag to Nirvana. As he grew older, he

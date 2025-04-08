@@ -18,7 +18,7 @@ const Header = () => {
   }, [path])
 
   return (
-    <div className="absolute font-arial z-50 flex justify-between px-4 mt-3 w-full animate-fadeInHeader">
+    <div className="absolute font-helvetica z-50 flex justify-between px-4 mt-3 w-full animate-fadeInHeader">
       <Link
         to="/"
         className={`text-5xl select-none font-skorzhen ${

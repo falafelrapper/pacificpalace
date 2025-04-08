@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         arial: ["Arial", "verdana", "sans-serif"],
+        helvetica: ["Helvetica", "sans-serif"],
         futuraPt: ["futura-pt"],
         proximaNova: ["proxima-nova"],
         skorzhen: ["Skorzhen"],

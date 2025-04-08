@@ -123,7 +123,7 @@ const Home: React.FC = () => {
   }, [])
 
   return (
-    <main className="animate-fadeIn">
+    <main className="animate-fadeIn font-helvetica">
       <section id="cover" className="cover relative z-40">
         <img
           className="header-img absolute pointer-events-none"
@@ -133,7 +133,7 @@ const Home: React.FC = () => {
       </section>
       <section
         id="tour"
-        className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
+        className="cover scroll-section z-20 flex flex-col items-center text-white "
       >
         <h2 className="z-30 my-10 text-5xl font-bold">SHOWS</h2>
 
@@ -164,9 +164,7 @@ const Home: React.FC = () => {
         id="videos"
         className="cover scroll-section relative z-20 flex flex-col items-center"
       >
-        <h2 className="z-50 my-10 text-5xl font-arial font-bold text-white">
-          VIDEOS
-        </h2>
+        <h2 className="z-50 my-10 text-5xl  font-bold text-white">VIDEOS</h2>
         <div className="z-50 h-full flex items-center">
           <iframe
             className="h-[300px] w-[400px] md:h-[500px] md:w-[800px] lg:h-[720px] lg:w-[1280px]"
@@ -184,9 +182,9 @@ const Home: React.FC = () => {
       </section>
       <section
         id="contact"
-        className="cover scroll-section z-20 flex flex-col items-center text-white font-arial"
+        className="cover scroll-section z-20 flex flex-col items-center text-white "
       >
-        <h2 className="z-50 my-10 text-5xl font-arial font-bold">CONTACT</h2>
+        <h2 className="z-50 my-10 text-5xl  font-bold">CONTACT</h2>
         <h3 className="z-50 text-4xl font-bold">Booking / Media / Press</h3>
         <div className="z-30 h-2/3 flex flex-col justify-evenly items-center">
           <a
