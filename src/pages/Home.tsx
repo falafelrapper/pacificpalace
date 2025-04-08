@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useState, useEffect, useMemo } from "react"
 import Event from "../components/Event.tsx"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons"
@@ -94,6 +94,27 @@ const Home: React.FC = () => {
     // }
   }
 
+  const [hasUpcomingEvents, setHasUpcomingEvents] = useState(true)
+
+  const visibleEvents = useMemo(() => {
+    const events = [
+      {
+        name: "Bar Lubitsch",
+        date: "Apr. 10th, 2025",
+        area: "West Hollywood, CA",
+        ticket_link:
+          "https://www.eventbrite.com/e/faydean-alex-tore-izye-communitypool-pacific-palace-tickets-1277875523089?aff=ebdssbdestsearch",
+        isPastEvent: new Date("2025-04-11") < new Date(),
+      },
+      // Add more events here
+    ]
+    return events.filter((event) => !event.isPastEvent)
+  }, [])
+
+  useEffect(() => {
+    setHasUpcomingEvents(visibleEvents.length > 0)
+  }, [visibleEvents])
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
     return () => {
@@ -116,14 +137,22 @@ const Home: React.FC = () => {
       >
         <h2 className="z-30 my-10 text-5xl font-bold">SHOWS</h2>
 
-        {/* <p className="z-30 text-3xl">No upcoming shows currently</p> */}
-
-        <Event
-          name="Bar Lubitsch"
-          date="Apr. 10th, 2025"
-          area="West Hollywood, CA"
-          ticket_link="https://www.eventbrite.com/e/faydean-alex-tore-izye-communitypool-pacific-palace-tickets-1277875523089?aff=ebdssbdestsearch"
-        />
+        {hasUpcomingEvents ? (
+          visibleEvents.map(
+            (event, index) =>
+              !event.isPastEvent && (
+                <Event
+                  key={index}
+                  name={event.name}
+                  date={event.date}
+                  area={event.area}
+                  ticket_link={event.ticket_link}
+                />
+              )
+          )
+        ) : (
+          <p className="z-30 text-3xl">No upcoming shows currently</p>
+        )}
 
         <img
           className="cover-img absolute min-w-full pointer-events-none"
